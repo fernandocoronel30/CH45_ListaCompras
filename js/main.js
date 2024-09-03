@@ -103,13 +103,13 @@ txtNumber.addEventListener("blur", function (event) {
 }); //aqui termina el addEventListerner
 
 window.addEventListener("load", function(){
-  if(localStorage.getItem("contador", contador) != null){
+  if(localStorage.getItem("contador") != null){
     contador = Number(this.localStorage.getItem("contador"));
   }//!=null
-  if(localStorage.getItem("totalEnProductos", totalEnProductos)!= null){
+  if(localStorage.getItem("totalEnProductos")!= null){
     totalEnProductos = Number(this.localStorage.getItem("totalEnProductos"));
   }//!=null
-  if(localStorage.getItem("costoTotal", costoTotal.toFixed(2)) != null){
+  if(localStorage.getItem("costoTotal") != null){
     costoTotal = Number(this.localStorage.getItem("costoTotal"));
   }//!=null
     contadorProductos.innerText = contador;
